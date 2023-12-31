@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 
 # 读取Excel文件
 excel_file = '/Users/zhangpingzuan/PycharmProjects/finance-tool/data/2020.xlsx'  # 替换为你的Excel文件路径
@@ -27,7 +26,7 @@ end_row = 160  # 替换为实际的开始行号
 start_column = '部门名称'  # 替换为实际的开始列名
 end_column = '代码'      # 替换为实际的结束列名
 column_names = ['部门名称', '代码', 'GO']  # 替换为实际的列名列表
-output_file = 'output.json'  # 替换为实际的输出文件路径
+output_file = 'output/工业细分行业占比分析.json'  # 替换为实际的输出文件路径
 
 result = extract_columns_from_excel(excel_file, start_row, end_row, column_names)
 
